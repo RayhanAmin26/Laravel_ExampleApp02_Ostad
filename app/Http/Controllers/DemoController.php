@@ -34,7 +34,28 @@ class DemoController extends Controller
         return "Logging eccessfully";
     }
 
-    function demo4(Request $request){
+    function demo5(Request $request){
+        $num1=10;
+        $num2=20;
+        // dd($num1); er por theke r output show korbena (code execution stop hbe)
+        $sum=$num1+$num2;
+        return $sum;
         
     
+    }
+
+
+    
+    function demo6(Request $request){
+        try{
+            $num1=10;
+            $num2=20;
+            $sum=$num1{$num2};
+            return $sum;
+        
+    
+    } catch (\Exception $exception){
+        return "Fail";
+    }
+  }
 }
