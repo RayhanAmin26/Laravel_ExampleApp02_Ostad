@@ -27,5 +27,14 @@ class DemoController extends Controller
        $request->session()->flush();
        return "Hellow Rayhan Strore data in session seccessfully";
     }
+
+    function demo4(Request $request){
+        //laravel logging
+        Log::error($request->url());
+        return "Logging eccessfully";
+    }
+
+    function demo4(Request $request){
+        
     
 }
