@@ -54,7 +54,8 @@ class DemoController extends Controller
             return $sum;
         
     
-    } catch (\Exception $exception){
+    } catch (Exception $exception){
+         Log::error($exception);
         return "Fail";
     }
   }
